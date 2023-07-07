@@ -1,0 +1,40 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function abc(){
+           firstname= document.f1.fn.value;
+           lastname= document.f1.ln.value;
+           fullname= firstname+" "+ lastname; 
+            //alert("Hi "+fullname)
+            document.f1.full.value=fullname;
+        }
+        function xyz(){  document.getElementById('fn').style.backgroundColor="lightblue"     }
+        function atoz(){     document.getElementById('fn').style.backgroundColor="pink"}
+        function bgclr(value){      document.getElementById('bgc').style.backgroundColor=value  }
+    </script>
+</head>
+<body id="bgc">
+   <marquee onmouseover="stop()" onmouseout="start()"> <h1> Hi Welcome to Web Application </h1></marquee>
+    <div style="text-align: center;">  
+       <form name="f1">
+             First Name :<input type="text" name="fn" id="fn" onfocus="xyz()" onblur="atoz()"><br>
+             Last PAss :<input type="text" name="ln"><br>
+            Full name :<input type="text" name="full" onfocus="abc()"><br>
+             <input type="button" value="CLICK" onclick="abc()">
+             <input type="button" value="DOuble CLICK " ondblclick="abc()">
+             <select onchange="bgclr(value)">
+                <option>COLOR</option>
+                <option value="red">RED</option>
+                <option value="blue">BLUE</option>
+                <option value="yellow">YELLOW</option>
+                <option value="pink">Pink</option>
+                <option value="orange">orange</option>
+             </select>
+       </form>
+    </div>
+</body>
+</html>
+            onclick , ondblclick, onmouseout , onmouseover, onfocus, onblur, onchange, onselect , ondrag, onsubmit 
