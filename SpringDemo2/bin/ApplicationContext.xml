@@ -1,0 +1,14 @@
+<beans xmlns = "http://www.springframework.org/schema/beans" 
+xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+	<bean id="product" class="com.Product">
+		<property name = "pid"><value>100</value></property>
+		<property name = "pname"><value>iphone</value></property>
+		<property name = "price"><value>90000</value></property>
+		<property name = "pdesc"><value>phone</value></property>
+	
+	
+	</bean>
+	
+</beans>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+    <title>Banking Operations</title>
+     <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            background-image: linear-gradient( 108.4deg, rgba(220,194,255,1) 6.9%, rgba(185,223,248,1) 86.5% );
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 300px;
+            margin: 0 auto;
+            margin-top: 150px;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            margin-top: 20px;
+        }
+
+        .button-container button {
+            margin-bottom: 10px;
+            padding: 10px;
+            background-color: #26c6da;
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        .button-container button:hover {
+            background-color:#0097a7;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Banking Operations</h2>
+        <div class="button-container">
+            <button onclick="window.location.href='create_account.html'">Create Account</button>
+            <button onclick="window.location.href='balance_check.html'">Balance Check</button>
+            <button onclick="window.location.href='deposit.html'">Deposit</button>
+            <button onclick="window.location.href='withdraw.html'">Withdraw</button>
+        </div>
+    </div>
+</body>
+</html>

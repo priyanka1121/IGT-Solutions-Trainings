@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+	body {
+            font-family: Arial, sans-serif;
+            background-color: #E3F2FD;
+            padding: 20px;
+            background-repeat: no-repeat;
+             background-attachment: fixed;
+  background-size: cover;
+           background-image: radial-gradient( circle 849px at 1.1% 4.2%, rgba(248,190,117,1) 8%, rgba(177,172,174,1) 86.7% );
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+           
+        }
+        
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 20px;
+            width: 300px;
+            
+        }
+      
+        .form-group label {
+            margin-bottom: 5px;
+            font-weight:bold;
+        }
+        
+        .form-group input[type="text"],
+        .form-group input[type="number"] {
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        
+        .form-group input[type="submit"] {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color:#1E2A48 ;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+
+input[type="submit"]:hover {
+            background-color:#0097a7;
+        }
+    </style>
+    <title>Deposit Form</title>
+    
+</head>
+<body>
+    <div class="container">
+        <h2>Deposit Form</h2>
+        <form action="deposit.jsp" method="post">
+            <div class="form-group">
+                <label for="id">ID:</label>
+                <input type="text" id="id" name="id" required>
+            </div>
+            <div class="form-group">
+                <label for="accountNumber">Account Number:</label>
+                <input type="text" id="accountNumber" name="accountNumber" required>
+            </div>
+            <div class="form-group">
+                <label for="pan">PAN:</label>
+                <input type="text" id="pan" name="pan" required>
+            </div>
+            <div class="form-group">
+                <label for="depositAmount">Deposit Amount:</label>
+                <input type="number" id="depositAmount" name="depositAmount" required>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Deposit">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

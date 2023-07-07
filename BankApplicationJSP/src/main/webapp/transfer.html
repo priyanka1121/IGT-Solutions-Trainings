@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Money Transfer</title>
+    <style>
+    body {
+            font-family: Arial, sans-serif;
+            background-color: #E3F2FD;
+            padding: 20px;
+            background-repeat: no-repeat;
+             background-attachment: fixed;
+  background-size: cover;
+           background-image: radial-gradient( circle 849px at 1.1% 4.2%, rgba(248,190,117,1) 8%, rgba(177,172,174,1) 86.7% );
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+           
+        }
+        
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 20px;
+            width: 300px;
+            
+        }
+      
+        .form-group label {
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        
+        .form-group input[type="text"],
+        .form-group input[type="number"] {
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 5px;
+            font-weight: bold;
+            border: 1px solid #ccc;
+        }
+        
+        .form-group input[type="submit"] {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color:#1E2A48;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+input[type="submit"]:hover {
+            background-color:#0097a7;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="form">
+            <h2>Money Transfer</h2>
+            <form action="transfer.jsp" method="post" class="form">
+                <div class="form-group">
+                    <label for="fromId">From ID</label>
+                    <input type="text" id="fromId" name="fromId" required>
+                </div>
+                <div class="form-group">
+                    <label for="fromAccountNumber">From Account Number</label>
+                    <input type="text" id="fromAccountNumber" name="fromAccountNumber" required>
+                </div>
+                <div class="form-group">
+                    <label for="toId">To ID</label>
+                    <input type="text" id="toId" name="toId" required>
+                </div>
+                <div class="form-group">
+                    <label for="transferAmount">Transfer Amount</label>
+                    <input type="number" id="transferAmount" name="transferAmount" required>
+                </div>
+                <div class="form-group">
+                    <button type="submit">Transfer</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

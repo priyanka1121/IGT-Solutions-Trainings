@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Banking Operations</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .welcome-image {
+            position: relative;
+  text-align: center;
+  color: white;
+  height: 590px;
+  overflow: hidden;
+  backdrop-filter: blur(10px);
+        }
+        
+        .welcome-image img {
+           width: 100%;
+      height: auto;
+      transition: filter 0.3s ease;
+        }
+        
+        .content {
+           position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -60%);
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 20px;
+      border-radius: 10px;
+      width: 700px;
+      text-align: center;
+        }
+        
+        .content h2 {
+            text-align: center;
+            font-size: 30px;
+      margin-bottom: 10px;
+      color:white;
+      
+        }
+        
+        .content p {
+            text-align: justify;
+            font-size: 20px;
+            color:white;
+        }
+         .navbar-nav .nav-item-right {
+            margin-left: 700px;
+            margin-right:10px;
+        }
+        
+       
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Banking Operations</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="create.html">Create</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="deposit.html">Deposit</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="withdraw.html">Withdraw</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="transfer.html">Transfer</a>
+                </li>
+                <li class="nav-item-right">
+                <a class="btn btn-outline-light" href="profile.jsp">Profile</a>
+            </li>
+            <li class="nav-item-logout">
+                <a class="btn btn-outline-light" href="logout.jsp">Logout</a>
+            </li>
+            </ul>
+        </div>
+    </nav>
+    
+    <div class="welcome-image">
+        <img src="home1.jpg" alt="Welcome Image">
+        <h1>Welcome to Our Bank</h1>
+    </div>
+    
+    <div class="content">
+        <h2>Banking Operations</h2>
+        <p>
+            This page allows you to perform various banking operations. 
+            Click on the buttons in the navbar to create a new account, 
+            make deposits, withdrawals, or transfers, and manage your profile. 
+            
+        </p>
+    </div>
+    
+  
+</body>
+</html>

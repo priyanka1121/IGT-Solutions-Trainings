@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bank Website</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <style>
+    .welcome-image {
+  position: relative;
+  text-align: center;
+  color: white;
+  height: 590px;
+  overflow: hidden;
+}
+    
+    .welcome-image img {
+      width: 100%;
+      height: auto;
+      transition: filter 0.3s ease;
+    }
+
+     .welcome-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -80%);
+      background-image: linear-gradient( 359.1deg, rgba(0,0,0,1) -5.6%, rgba(80,85,84,1) 151.7% );
+      padding: 20px;
+      border-radius: 10px;
+      width: 400px;
+      text-align: center;
+    }
+
+    .welcome-text h1 {
+      font-size: 30px;
+      margin-bottom: 10px;
+    }
+
+    .welcome-text p {
+      font-size: 20px;
+    }
+    .navbar{
+    background-color: #1E2A48;
+    }
+    .nav-item-right{
+    	margin-left: 700px;
+            margin-right:10px;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Bank Website</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item-right">
+          <a class="btn btn-outline-light" href="login.html">Login</a>
+        </li>
+        <li class="nav-item">
+          <a class="btn btn-outline-light" href="register.html">Register</a>
+        </li>
+        
+      </ul>
+    </div>
+  </nav>
+
+  <div class="welcome-image">
+    <img src="home1.jpg" alt="Welcome Image">
+    <div class="welcome-text">
+      <h1>Welcome to our Bank!</h1>
+      <p>Providing secure and reliable banking services.</p>
+    </div>
+  </div>
+
+  <div class="container">
+    <!-- Rest of the content goes here -->
+  </div>
+
+ 
+</body>
+</html>
