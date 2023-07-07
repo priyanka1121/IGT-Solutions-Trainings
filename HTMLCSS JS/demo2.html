@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Calculator</title>
+  <script>
+    function calculate() {
+      var a = parseFloat(document.getElementById('a').value);
+      var b = parseFloat(document.getElementById('b').value);
+      
+      if (isNaN(a) || isNaN(b)) {
+        alert('Please enter valid numbers');
+        return;
+      }
+      
+      var result;
+      var operation = document.querySelector('input[name="operation"]:checked').value;
+      
+      switch (operation) {
+        case 'add':
+          result = a + b;
+          break;
+        case 'sub':
+          result = a - b;
+          break;
+        case 'mul':
+          result = a * b;
+          break;
+        case 'div':
+          result = a / b;
+          break;
+      }
+      
+      alert('Result: ' + result);
+    }
+  </script>
+</head>
+<body>
+  <h1>Arithmetic Calculator</h1>
+  
+  <form>
+    <label for="a">Number 1:</label>
+    <input type="text" id="a" placeholder="Enter number 1">
+    <br>
+    
+    <label for="b">Number 2:</label>
+    <input type="text" id="b" placeholder="Enter number 2">
+    <br>
+    
+    <input type="radio" id="add" name="operation" value="add" checked>
+    <label for="add">add</label>
+    
+    <input type="radio" id="sub" name="operation" value="sub">
+    <label for="sub">sub</label>
+    
+    <input type="radio" id="mul" name="operation" value="mul">
+    <label for="mul">mul</label>
+    
+    <input type="radio" id="div" name="operation" value="div">
+    <label for="div">div</label>
+    <br>
+    
+    <input type="button" value="Calculate" onclick="calculate()">
+  </form>
+</body>
+</html>

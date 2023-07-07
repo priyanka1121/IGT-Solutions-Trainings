@@ -1,0 +1,25 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function abc(){
+            fname=document.f1.fn.value;
+            lname = document.f1.ln.value;
+            fullname = fname+" "+lname;
+            document.f1.full.value = fullname;
+        }
+    </script>
+</head>
+<body>
+    <marquee onmouseover="stop()" onmouseout="start()"><h1>Hi welcome to web application</h1></marquee>
+    <div style="text-align: center;">
+        <form name="f1"></form>
+        First Name : <input type="text" name="fn"><br>
+        Last Name : <input type="text" name="full"><br>
+        Full Name : <input type="text" name="fn"><br>
+        <input type="button" value="Login" onclick="abc()">
+    </div>
+</body>
+</html>
